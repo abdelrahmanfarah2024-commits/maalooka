@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>💗 صلح لوكة 💗</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffd6e8,#eadcff);display:flex;align-items:center;justify-content:center;overflow:hidden;color:#542d4a}.card{width:min(94%,720px);max-height:94vh;overflow:auto;background:#ffffffee;border-radius:30px;padding:28px;text-align:center;box-shadow:0 15px 50px #7d477544}.hidden{display:none!important}h1{font-size:34px;margin:6px}h2{font-size:25px}p{font-size:19px;line-height:2}input{padding:14px;width:80%;border:2px solid #e3a4c6;border-radius:15px;text-align:center;font-size:18px}button{background:#d966a2;color:white;border:0;border-radius:15px;padding:13px 23px;font-size:17px;font-weight:bold;margin:8px;cursor:pointer}.page{display:none}.page.active{display:block;animation:pop .4s}@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.photos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px;box-shadow:0 6px 20px #65405b33}.heart{position:fixed;bottom:-30px;animation:up 6s linear forwards;pointer-events:none}@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}small{opacity:.65}@media(max-width:600px){.photos{grid-template-columns:repeat(3,1fr)}p{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="card" id="lock">
+<div style="font-size:55px">🔐💗</div>
+<h1>رسالة سرية للوكـة 🥺</h1>
+<p>اكتبي الباسورد عشان تشوفي الكلام اللي من قلبي 💕</p>
+<input id="pass" type="password" placeholder="الباسورد">
+<br><button onclick="unlock()">افتحي 💗</button>
+<p id="bad" class="hidden">غلط يا لوكة 😭 جربي تاني</p>
+</div>
+
+<div class="card hidden" id="game">
+<h1>💗 للوكـة بس 💗</h1>
+
+<div class="page active">
+<h2>🥺 والله يا لوكة</h2>
+<p>والله يا لوكة محد هيعرف ولا يقدر ياخد مكانك، بقالك <b>4 سنين</b> معايا وف ضهري، وبحبك والله يا أحلى لوكة. ❤️</p>
+<p>وأنا مهما اتخانقت معاكي أو حصل بينا أي زعل، عمري ما أنسى إنك من الناس اللي وقفت جنبي بجد. وجودك في حياتي بقى جزء من ذكرياتي ومن أيامي، ومش عايزة أخسر ده كله عشان موقف أو زعل. 🥺💗</p>
+<button onclick="next()">كملي 🥺</button>
+</div>
+
+<div class="page">
+<h2>💌 أربع سنين مش قليلين</h2>
+<p>أربع سنين فيها ضحك وهزار ورغي ومواقف كتير، فيها أيام حلوة وأيام وحشة، بس في الآخر كل ده خلانا نعرف بعض أكتر ونفهم بعض أكتر. ❤️</p>
+<p>فاكرة كل مرة ضحكنا فيها من قلبنا؟ وكل مرة كنا بنحكي لبعض حاجات محدش غيرنا كان يعرفها؟ وكل موقف وقفنا فيه جنب بعض؟ أنا فاكرة ومقدّرة كل ده أوي. 🫂</p>
+<button onclick="next()">كملي 💕</button>
+</div>
+
+<div class="page">
+<h2>🌷 حقك عليا</h2>
+<p>لو أنا زعلتك أو ضايقتك في حاجة، سواء بقصد أو من غير قصد، فأنا بجد آسفة. يمكن ساعات كلامي أو تصرفاتي تطلع غلط، بس والله ده عمره ما كان معناه إنك مش مهمة عندي.</p>
+<p>أنا مش عايزة أفضل زعلانة منك ولا أشوفك زعلانة مني. أنا عايزة نرجع نتكلم ونضحك ونرغي بالساعات زي زمان، ونفضل جنب بعض مهما حصل. 🥹❤️</p>
+<button onclick="next()">في كلام أكتر 💗</button>
+</div>
+
+<div class="page">
+<h2>🫶 إنتِ غالية عندي</h2>
+<p>مش كل الناس اللي بنعرفهم بيكملوا معانا، ومش كل حد بنحبه بيكون موجود وقت ما نحتاجه. عشان كده أنا مقدّرة وجودك عندي جدًا.</p>
+<p>إنتِ مش مجرد واحدة أعرفها وخلاص؛ إنتِ لوكة اللي عشت معاها أربع سنين من عمري، وعندي معاكي ذكريات وحكايات كتير أوي. وأنا نفسي بدل ما نسيب الزعل يكبر، نرميه ورا ضهرنا ونبدأ من جديد. 💗</p>
+<button onclick="next()">شوفي ذكرياتنا 📸</button>
+</div>
+
+<div class="page">
+<h2>📸 صور لوكة الكتيررر</h2>
+<p>هنا بقى حطي كل الصور اللي نفسك تحطيها 😭❤️</p>
+<div class="photos">
+<img src="photo1.jpg"><img src="photo2.jpg"><img src="photo3.jpg"><img src="photo4.jpg">
+<img src="photo5.jpg"><img src="photo6.jpg"><img src="photo7.jpg"><img src="photo8.jpg">
+<img src="photo9.jpg"><img src="photo10.jpg"><img src="photo11.jpg"><img src="photo12.jpg">
+<img src="photo13.jpg"><img src="photo14.jpg"><img src="photo15.jpg"><img src="photo16.jpg">
+<img src="photo17.jpg"><img src="photo18.jpg"><img src="photo19.jpg"><img src="photo20.jpg">
+</div>
+<p><small>حطي الصور جنب index.html وسمّيهم photo1.jpg لحد photo20.jpg، وتقدري تزودي أكتر بنفس الطريقة.</small></p>
+<button onclick="next()">آخر رسالة 🥺</button>
+</div>
+
+<div class="page">
+<h2>🥹 ملوكة سامحيني؟</h2>
+<p>أنا عايزة أقولك حاجة أخيرة: مهما حصل بينا، أنا مش عايزة الزعل يمسح كل الحلو اللي بينا. أربع سنين من عمري مش حاجة بسيطة، وإنتِ ليكي مكانة كبيرة عندي. ❤️</p>
+<p>فـ لو في حاجة مضايقاكي مني، نتكلم فيها. ولو أنا غلطانة هقولك إني غلطانة، ولو إنتِ زعلانة مني هسمعك. المهم نرجع كويسين، لأن وجودك عندي أغلى من أي خناقة. 🥺💗</p>
+<p><b>بحبك يا أحلى لوكة، ومش عايزة أخسرِك أبدًا. ❤️</b></p>
+<button onclick="yes()">آه نتصالح 💗</button>
+<button id="no" onclick="run()">لأ 😭</button>
+<p id="answer"></p>
+</div>
+
+<br>
+<audio id="music" controls loop autoplay style="width:90%">
+<source src="mama_song.mp3" type="audio/mpeg">
+</audio>
+<small>لو عندك أغنية، حطيها جنب index.html وسمّيها mama_song.mp3 🎵</small>
+</div>
+
+<script>
+let i=0;const pages=document.querySelectorAll('.page');
+function unlock(){if(document.getElementById('pass').value.trim().toLowerCase()==='lokaaa'){lock.classList.add('hidden');game.classList.remove('hidden');document.getElementById('music').play().catch(()=>{})}else bad.classList.remove('hidden')}
+function next(){pages[i].classList.remove('active');i=Math.min(i+1,pages.length-1);pages[i].classList.add('active')}
+function run(){no.style.position='fixed';no.style.left=(15+Math.random()*70)+'%';no.style.top=(15+Math.random()*70)+'%';answer.textContent='مش هتهربي من الصلح 😂💗'}
+function yes(){answer.innerHTML='ييييييي 😭❤️ اتصالحناااا! أحلى لوكة في الدنيا 🥹💗';for(let j=0;j<30;j++)setTimeout(()=>{let h=document.createElement('div');h.className='heart';h.textContent=['💗','💕','💖','❤️','🫶'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=20+Math.random()*25+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)},j*70)}
+</script>
+</body>
+</html>
